@@ -287,19 +287,32 @@ export class RedView extends ItemView {
             text: '+'
         });
 
-        const updateFontSize = async () => {
+        let fontSizeDebounceTimer: number | null = null;
+
+        const applyFontSizeVisual = () => {
             const size = parseInt(this.fontSizeSelect.value);
             this.themeManager.setFontSize(size);
-            await this.settingsManager.updateSettings({ fontSize: size });
             this.themeManager.applyTheme(this.previewEl);
-            await new Promise(resolve => setTimeout(resolve, 50));
-            this.splitOverflowSections();
-            this.updateNavigationState();
+        };
+
+        const saveFontSizeDebounced = () => {
+            if (fontSizeDebounceTimer) window.clearTimeout(fontSizeDebounceTimer);
+            fontSizeDebounceTimer = window.setTimeout(async () => {
+                const size = parseInt(this.fontSizeSelect.value);
+                await this.settingsManager.updateSettings({ fontSize: size });
+                this.splitOverflowSections();
+                this.updateNavigationState();
+            }, 300);
+        };
+
+        const updateFontSize = () => {
+            applyFontSizeVisual();
+            saveFontSizeDebounced();
         };
 
         decreaseButton.addEventListener('click', () => {
             const currentSize = parseInt(this.fontSizeSelect.value);
-            if (currentSize > 12) {
+            if (currentSize > 10) {
                 this.fontSizeSelect.value = (currentSize - 1).toString();
                 updateFontSize();
             }

@@ -177,7 +177,7 @@ export class ThemeManager {
         }
 
         // 应用标题样式
-        ['h2', 'h3', 'h4', 'h5', 'h6'].forEach(tag => {
+        ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach(tag => {
             element.querySelectorAll(tag).forEach(el => {
                 // 检查是否已经处理过
                 if (!el.querySelector('.content')) {
@@ -197,11 +197,16 @@ export class ThemeManager {
                 }
 
                 // 根据标签选择对应的样式
-                const styleKey = (tag === 'h4' || tag === 'h5' || tag === 'h6' ? 'base' : tag) as keyof typeof styles.title;
+                const styleKey = (tag === 'h1' || tag === 'h4' || tag === 'h5' || tag === 'h6' ? 'base' : tag) as keyof typeof styles.title;
                 const titleStyle = styles.title[styleKey];
 
+                // 去掉主题 JSON 中的 font-size，改为由 currentFontSize 按比例控制
+                const ratios: Record<string, number> = { h1: 1.8, h2: 1.5, h3: 1.25, h4: 1.1, h5: 1.1, h6: 1.1 };
+                const scaledFontSize = Math.round(this.currentFontSize * ratios[tag]);
+                const baseWithoutFontSize = titleStyle.base.replace(/font-size:[^;]+;?/g, '').trim();
+
                 // 应用样式
-                el.setAttribute('style', `${titleStyle.base}; font-family: ${this.currentFont};`);
+                el.setAttribute('style', `${baseWithoutFontSize}; font-size: ${scaledFontSize}px; font-family: ${this.currentFont};`);
                 el.querySelector('.content')?.setAttribute('style', titleStyle.content);
                 el.querySelector('.after')?.setAttribute('style', titleStyle.after);
             });
