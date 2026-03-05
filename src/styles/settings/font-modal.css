@@ -1,0 +1,68 @@
+/* 组件容器 */
+.red-font-modal {
+    --rfd-accent: var(--interactive-accent);
+    --rfd-bg: var(--background-primary);
+    --rfd-border: var(--background-modifier-border);
+}
+
+/* 标题容器 */
+.red-font-modal .rfd-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--rfd-border);
+}
+
+/* 帮助按钮容器 */
+.red-font-modal .rfd-help-trigger {
+    position: relative;
+    margin-left: 0.8rem;
+}
+
+/* 帮助按钮 */
+.red-font-modal .rfd-help-btn {
+    background: none;
+    border: none;
+    padding: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    opacity: 0.8;
+}
+.red-font-modal .rfd-help-btn:hover {
+    opacity: 1;
+    color: var(--rfd-accent);
+}
+
+/* 提示框 */
+.red-font-modal .rfd-help-tooltip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 390px;
+    padding: 14px;
+    background: var(--rfd-bg);
+    border: 1px solid var(--rfd-border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: calc(var(--layer-popover) + 100);
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* 交互状态 */
+.red-font-modal .rfd-help-trigger:hover .rfd-help-tooltip {
+    display: block;
+}
+
+/* 移动端适配 */
+@media (hover: none) and (pointer: coarse) {
+    .red-font-modal .rfd-help-tooltip {
+        width: 95vw;
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+}

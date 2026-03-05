@@ -1,0 +1,69 @@
+{
+    "id": "yueling",
+    "name": "悦灵雅棕",
+    "styles": {
+        "imagePreview": "background-color: #1c1c1e; padding: 28px 24px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 12px; overflow: hidden;",
+                "placeholder": "background: #2c2c2e; transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease;"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 8px;",
+            "userName": "font-size: 16px; font-weight: 600; color: #ffffff;",
+            "userId": "font-size: 14px; color: #98989d;",
+            "postTime": "font-size: 13px; color: #636366;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #98989d; font-size: 13px; border-top: 1px solid #2c2c2e; background: #1c1c1e;",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #636366;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #f2f2f7;",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 26px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #f2f2f7;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 22px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #f2f2f7;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.1em; font-size: 15px; color: #ffffff;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #c57512;",
+            "em": "font-style: italic; color: #c57512;",
+            "del": "text-decoration: line-through; color: #636366;"
+        },
+        "list": {
+            "container": "padding-left: 26px; margin-bottom: 1.1em; color: #d1d1d6;",
+            "item": "margin-bottom: 0.7em; font-size: 15px; color: #d1d1d6; line-height: 1.75;",
+            "taskList": "list-style: none; margin-left: -22px; font-size: 15px; color: #d1d1d6; line-height: 1.75;"
+        },
+        "code": {
+            "block": "background: #2c2c2e; padding: 1em 1.2em; border-radius: 12px; font-size: 14px; font-family: SF Mono, Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #ffffff; margin: 1.3em 0;",
+            "inline": "background: #2c2c2e; padding: 3px 8px; border-radius: 6px; color: #ffffff; font-size: 14px; font-family: SF Mono, Menlo, monospace;"
+        },
+        "quote": "border-left: 3px solid #c57512; padding: 0 0 0 18px; margin: 1.2em 0; color: #f2f2f7; font-style: normal; font-size: 15px; line-height: 1.75;",
+        "image": "max-width: 100%; height: auto; margin: 1.3em auto; border-radius: 12px;",
+        "link": "color: #c57512; text-decoration: underline; text-underline-offset: 2px; transition: opacity 0.2s ease;",
+        "table": {
+            "container": "width: 100%; margin: 1.3em 0; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; border: 1px solid #2c2c2e;",
+            "header": "background: #2c2c2e; font-weight: 600; color: #f2f2f7; padding: 12px;",
+            "cell": "padding: 12px; color: #d1d1d6; border-top: 1px solid #2c2c2e;"
+        },
+        "hr": "border: none; border-top: 1px solid #2c2c2e; margin: 26px 0;",
+        "footnote": {
+            "ref": "color: #98989d; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #98989d; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "id": "forest",
+    "name": "森林清晨",
+    "styles": {
+        "imagePreview": "background-color: #1a2420; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(46,204,113,0.15); border: 1px solid #2ecc7180;",
+                "placeholder": "background: #243830; transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease; filter: brightness(1.05);"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 10px;",
+            "userName": "font-size: 16px; font-weight: 600; color: #2ecc71; text-shadow: 0 2px 4px rgba(46,204,113,0.1);",
+            "userId": "font-size: 14px; color: #27ae60; font-family: 'SF Pro Text';",
+            "postTime": "font-size: 13px; color: #16a085; letter-spacing: 0.02em;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #27ae60; font-size: 13px; border-top: 1px solid #2ecc7140; background: rgba(26,36,32,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #16a085;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #2ecc71; text-shadow: 0 2px 4px rgba(46,204,113,0.1);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #2ecc71;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #2ecc71;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.1em; font-size: 15px; color: #e8f5e9;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #2ecc71; text-shadow: 0 2px 4px rgba(46,204,113,0.2);",
+            "em": "font-style: normal; color: #27ae60; background: rgba(39,174,96,0.1); padding: 0 4px; border-radius: 2px;",
+            "del": "text-decoration: line-through; color: #16a085; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 26px; margin-bottom: 1.2em; color: #a8e6cf;",
+            "item": "margin-bottom: 0.7em; font-size: 15px; color: #a8e6cf; line-height: 1.75;",
+            "taskList": "list-style: none; margin-left: -22px; font-size: 15px; color: #a8e6cf; line-height: 1.75;"
+        },
+        "code": {
+            "block": "background: #243830; padding: 1.2em; border-radius: 14px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #a8e6cf; margin: 1.5em 0; box-shadow: inset 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #2ecc7180;",
+            "inline": "background: #243830; padding: 4px 10px; border-radius: 6px; color: #a8e6cf; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #2ecc7180;"
+        },
+        "quote": "border-left: 3px solid #2ecc71; padding: 0 0 0 20px; margin: 1.5em 0; color: #27ae60; font-style: normal; font-size: 15px; line-height: 1.75; background: rgba(46,204,113,0.05);",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 14px; box-shadow: 0 8px 24px rgba(46,204,113,0.1); border: 1px solid #2ecc7180;",
+        "link": "color: #2ecc71; text-decoration: none; border-bottom: 1px solid #2ecc7180; transition: all 0.2s ease; text-shadow: 0 2px 4px rgba(46,204,113,0.1);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; border: 1px solid #2ecc7180; box-shadow: 0 4px 12px rgba(46,204,113,0.1);",
+            "header": "background: #243830; font-weight: 600; color: #2ecc71; padding: 14px; border-bottom: 1px solid #2ecc7180;",
+            "cell": "padding: 14px; color: #a8e6cf; border-top: 1px solid #2ecc7180;"
+        },
+        "hr": "border: none; border-top: 1px solid #2ecc7180; margin: 32px 0; box-shadow: 0 2px 8px rgba(46,204,113,0.1);",
+        "footnote": {
+            "ref": "color: #27ae60; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #27ae60; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

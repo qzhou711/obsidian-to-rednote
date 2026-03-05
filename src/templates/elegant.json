@@ -1,0 +1,69 @@
+{
+    "id": "elegant",
+    "name": "优雅暗色",
+    "styles": {
+        "imagePreview": "background-color: #1a1721; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(180,144,255,0.15);",
+                "placeholder": "background: #2a2433; transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease;"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 8px;",
+            "userName": "font-size: 16px; font-weight: 600; color: #e2d9f3; letter-spacing: 0.02em;",
+            "userId": "font-size: 14px; color: #a393c9;",
+            "postTime": "font-size: 13px; color: #6d617f;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #a393c9; font-size: 13px; border-top: 1px solid #2a2433; background: rgba(26,23,33,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #6d617f;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #e2d9f3; text-shadow: 0 2px 4px rgba(0,0,0,0.1);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #e2d9f3;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #e2d9f3;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.75; margin-bottom: 1.1em; font-size: 15px; color: #c4b8dd;",
+        "emphasis": {
+            "strong": "font-weight: 600; color: #b490ff; text-shadow: 0 1px 2px rgba(180,144,255,0.2);",
+            "em": "font-style: normal; color: #a393c9; background: rgba(163,147,201,0.1); padding: 0 4px; border-radius: 2px;",
+            "del": "text-decoration: line-through; color: #6d617f; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 26px; margin-bottom: 1.2em; color: #c4b8dd;",
+            "item": "margin-bottom: 0.7em; font-size: 15px; color: #c4b8dd; line-height: 1.75;",
+            "taskList": "list-style: none; margin-left: -22px; font-size: 15px; color: #c4b8dd; line-height: 1.75;"
+        },
+        "code": {
+            "block": "background: #2a2433; padding: 1.2em; border-radius: 14px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #c4b8dd; margin: 1.3em 0; box-shadow: inset 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #3a3443;",
+            "inline": "background: #2a2433; padding: 4px 10px; border-radius: 6px; color: #c4b8dd; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #3a3443;"
+        },
+        "quote": "border-left: 3px solid #b490ff; padding: 0 0 0 18px; margin: 1.5em 0; color: #a393c9; font-style: normal; font-size: 15px; line-height: 1.75; background: rgba(180,144,255,0.05); border-radius: 0 4px 4px 0;",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);",
+        "link": "color: #b490ff; text-decoration: none; transition: all 0.2s ease; border-bottom: 1px solid rgba(180,144,255,0.3);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; border: 1px solid #3a3443; box-shadow: 0 4px 12px rgba(0,0,0,0.1);",
+            "header": "background: #2a2433; font-weight: 600; color: #e2d9f3; padding: 14px;",
+            "cell": "padding: 14px; color: #c4b8dd; border-top: 1px solid #3a3443;"
+        },
+        "hr": "border: none; border-top: 1px solid #3a3443; margin: 32px 0;",
+        "footnote": {
+            "ref": "color: #a393c9; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #a393c9; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

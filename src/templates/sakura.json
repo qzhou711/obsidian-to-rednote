@@ -1,0 +1,69 @@
+{
+    "id": "sakura",
+    "name": "樱花飞舞",
+    "styles": {
+        "imagePreview": "background-color: #1f1a1d; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(255,182,193,0.25); border: 1px solid #ffb6c180;",
+                "placeholder": "background: linear-gradient(135deg, #2d2428, #3a2d33); transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease; filter: brightness(1.05) contrast(1.02);"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 10px;",
+            "userName": "font-size: 16px; font-weight: 700; color: #ffb6c1; text-shadow: 0 2px 8px rgba(255,182,193,0.2);",
+            "userId": "font-size: 14px; color: #ff8da1; font-family: 'SF Pro Text';",
+            "postTime": "font-size: 13px; color: #ff6b88; letter-spacing: 0.03em;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #ff8da1; font-size: 13px; border-top: 1px solid #ffb6c140; background: rgba(31,26,29,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #ff6b88;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #ffb6c1; text-shadow: 0 2px 8px rgba(255,182,193,0.15);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #ffb6c1;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #ffb6c1;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.2em; font-size: 15px; color: #fff5f7;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #ff69b4; text-shadow: 0 2px 8px rgba(255,105,180,0.2);",
+            "em": "font-style: normal; color: #ff8da1; background: rgba(255,141,161,0.1); padding: 0 4px; border-left: 2px solid #ff8da180;",
+            "del": "text-decoration: line-through; color: #ff6b88; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 28px; margin-bottom: 1.2em; color: #ffd1d9;",
+            "item": "margin-bottom: 0.8em; font-size: 15px; color: #ffd1d9; line-height: 1.8;",
+            "taskList": "list-style: none; margin-left: -24px; font-size: 15px; color: #ffd1d9; line-height: 1.8;"
+        },
+        "code": {
+            "block": "background: #2d2428; padding: 1.2em; border-radius: 14px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #ffd1d9; margin: 1.5em 0; box-shadow: inset 0 4px 12px rgba(0,0,0,0.15), 0 2px 8px rgba(255,182,193,0.1); border: 1px solid #ffb6c180;",
+            "inline": "background: #2d2428; padding: 4px 10px; border-radius: 6px; color: #ffd1d9; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #ffb6c180;"
+        },
+        "quote": "border-left: 3px solid #ff8da1; padding: 0 0 0 20px; margin: 1.5em 0; color: #ff8da1; font-style: normal; font-size: 15px; line-height: 1.8; background: linear-gradient(to right, rgba(255,141,161,0.05), transparent);",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 14px; box-shadow: 0 8px 24px rgba(255,182,193,0.25); border: 1px solid #ffb6c180;",
+        "link": "color: #ffb6c1; text-decoration: none; border-bottom: 1px solid rgba(255,182,193,0.3); transition: all 0.2s ease; text-shadow: 0 2px 4px rgba(255,182,193,0.1);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; border: 1px solid #ffb6c180; box-shadow: 0 4px 12px rgba(255,182,193,0.15);",
+            "header": "background: linear-gradient(135deg, #2d2428, #1f1a1d); font-weight: 700; color: #ffb6c1; padding: 14px; border-bottom: 2px solid #ffb6c180;",
+            "cell": "padding: 14px; color: #ffd1d9; border-top: 1px solid #ffb6c180;"
+        },
+        "hr": "border: none; border-top: 2px solid #ffb6c180; margin: 32px 0; box-shadow: 0 2px 8px rgba(255,182,193,0.15);",
+        "footnote": {
+            "ref": "color: #ff8da1; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #ff8da1; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

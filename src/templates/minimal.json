@@ -1,0 +1,69 @@
+{
+    "id": "minimal",
+    "name": "极简主题",
+    "styles": {
+        "imagePreview": "background-color: #ffffff; padding: 36px 32px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);",
+                "placeholder": "background: #f5f5f5; transition: all 0.2s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease;"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 8px;",
+            "userName": "font-size: 16px; font-weight: 600; color: #333333; letter-spacing: 0.02em;",
+            "userId": "font-size: 14px; color: #666666;",
+            "postTime": "font-size: 13px; color: #999999;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 16px; padding: 16px; color: #999999; font-size: 13px; border-top: 1px solid #eeeeee; background: rgba(250,250,250,0.95); backdrop-filter: blur(8px);",
+            "text": "color: inherit; transition: opacity 0.2s ease; white-space: nowrap;",
+            "separator": "color: #dddddd;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #333333;",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 32px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #333333;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 28px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 600; color: #333333;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.2em; font-size: 15px; color: #444444;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #4a4a4a; background: rgba(74,74,74,0.05); padding: 0 2px;",
+            "em": "font-style: normal; color: #6c9eb8; background: rgba(108,158,184,0.05); padding: 0 2px;",
+            "del": "text-decoration: line-through; color: #999999; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 28px; margin-bottom: 1.2em; color: #666666;",
+            "item": "margin-bottom: 0.8em; font-size: 15px; color: #666666; line-height: 1.8;",
+            "taskList": "list-style: none; margin-left: -20px; font-size: 15px; color: #666666; line-height: 1.8;"
+        },
+        "code": {
+            "block": "background: #f5f5f5; padding: 1.2em; border-radius: 8px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #555555; margin: 1.5em 0; border: 1px solid #eeeeee;",
+            "inline": "background: #f5f5f5; padding: 4px 8px; border-radius: 4px; color: #555555; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #eeeeee;"
+        },
+        "quote": "border-left: 3px solid #eeeeee; padding: 0 0 0 20px; margin: 1.5em 0; color: #666666; font-style: normal; font-size: 15px; line-height: 1.8;",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);",
+        "link": "color: #6c9eb8; text-decoration: none; border-bottom: 1px solid rgba(108,158,184,0.3); transition: all 0.2s ease;",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: collapse;",
+            "header": "background: #f5f5f5; font-weight: 600; color: #333333; border-bottom: 2px solid #eeeeee; padding: 14px;",
+            "cell": "padding: 14px; color: #666666; border-bottom: 1px solid #eeeeee;"
+        },
+        "hr": "border: none; border-top: 1px solid #eeeeee; margin: 32px 0;",
+        "footnote": {
+            "ref": "color: #999999; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #999999; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

@@ -1,0 +1,268 @@
+/* 基础变量 */
+:root {
+    --modal-padding: 1.5rem;
+    --border-radius: 8px;
+    --transition-duration: 0.2s;
+}
+
+/* 模态框基础布局 */
+.red-theme-modal {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+/* 模态框头部 */
+.red-theme-modal .modal-header {
+    padding: var(--modal-padding);
+    border-bottom: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary);
+}
+
+.red-theme-modal .modal-header h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5em;
+    color: var(--text-normal);
+}
+
+/* 可滚动内容区域 */
+.red-theme-modal .modal-scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--modal-padding);
+    background-color: var(--background-secondary);
+}
+
+/* 自定义滚动条 */
+.red-theme-modal .modal-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.red-theme-modal .modal-scroll-container::-webkit-scrollbar-track {
+    background: var(--background-primary);
+}
+
+.red-theme-modal .modal-scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--background-modifier-border);
+    border-radius: 4px;
+}
+
+.red-theme-modal .modal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--background-modifier-border-hover);
+}
+
+/* 样式设置区域 */
+.red-theme-modal .style-section {
+    margin-bottom: 1rem;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--background-primary);
+}
+
+.red-theme-modal .style-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* 修改为两端对齐 */
+    padding: 1rem;
+    background-color: var(--background-secondary);
+    cursor: pointer;
+    transition: background-color var(--transition-duration) ease;
+}
+
+.red-theme-modal .style-section-reset {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+}
+
+.red-theme-modal .style-section-reset:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+}
+
+.red-theme-modal .style-section-header:hover {
+    background-color: var(--background-secondary-alt);
+}
+
+.red-theme-modal .style-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.red-theme-modal .style-section-title h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--text-normal);
+}
+.red-theme-modal .style-section-title h4 {
+    margin: 0;
+    font-size: 1em; /* 确保 h4 的字体大小小于 h3 */
+    color: var(--text-normal);
+}
+
+.red-theme-modal .style-section-toggle {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    transition: transform var(--transition-duration) ease;
+    margin-right: 0.5rem;
+}
+
+.red-theme-modal .style-section-content {
+    display: none;
+    padding: 1rem;
+    background-color: var(--background-primary);
+}
+
+.red-theme-modal .style-section.is-expanded .style-section-content {
+    display: block;
+}
+
+/* 设置项样式 */
+.red-theme-modal .setting-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+    display: flex;
+}
+
+.red-theme-modal .setting-item:last-child {
+    border-bottom: none;
+}
+
+.red-theme-modal .setting-item-info {
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.red-theme-modal .setting-item-name {
+    font-size: 0.9em; /* 确保设置项名称的字体大小小于 h4 */
+    font-weight: normal;
+    color: var(--text-normal);
+}
+
+.red-theme-modal .setting-item-description {
+    font-size: 0.8em; /* 确保设置项描述的字体大小小于 h4 */
+    color: var(--text-muted);
+}
+
+/* 输入控件样式 */
+.red-theme-modal .setting-item input {
+    width: 120px;  /* 改小输入框宽度 */
+    padding: 6px 10px;  /* 减小内边距 */
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary);
+    font-size: 14px;  /* 稍微调小字号 */
+}
+
+/* 自定义 CSS 输入框保持原样 */
+.red-theme-modal .custom-css-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary);
+    font-family: var(--font-monospace);
+    font-size: 13px;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* 颜色选择器样式优化 */
+.red-theme-modal .setting-item input[type="color"] {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;  /* 添加相对定位 */
+}
+
+.red-theme-modal .setting-item input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;  /* 确保包装器也是圆形 */
+    position: absolute;  /* 绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%;  /* 填充整个区域 */
+    height: 100%;
+}
+
+.red-theme-modal .setting-item input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 100%;  /* 确保颜色块填充整个区域 */
+    height: 100%;
+}
+
+.red-theme-modal .custom-css-input:focus {
+    border-color: var(--interactive-accent);
+    outline: none;
+}
+
+.red-theme-modal .setting-item-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.red-theme-modal .setting-item-control .clickable-icon {
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.red-theme-modal .setting-item-control .clickable-icon:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+}
+
+/* 按钮样式 */
+.red-modal-button {
+    padding: 10px 24px;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    cursor: pointer;
+}
+
+.red-modal-button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* 错误提示 */
+.red-theme-modal .notice {
+    color: var(--text-error);
+    margin-top: 6px;
+    font-size: 0.9em;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .red-theme-modal {
+        width: 90vw;
+        height: 90vh;
+        min-width: unset;
+    }
+    
+    .red-theme-modal .modal-header,
+    .red-theme-modal .modal-scroll-container {
+        padding: 1rem;
+    }
+}

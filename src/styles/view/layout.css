@@ -1,0 +1,185 @@
+/* 预览区域 */
+.red-preview-wrapper {
+    padding: 10px 20px 20px 20px;
+    margin: 10px;
+    height: calc(100% - 180px);
+    overflow-y: auto;
+    background: var(--background-primary);
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(82, 144, 220, 0.1);
+}
+
+.red-empty-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #999;
+    font-size: 16px;
+}
+/* 小红书预览容器 */
+.red-preview-container {
+    position: relative;
+    min-width: 490px;
+    aspect-ratio: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--background-primary-alt);
+    border-radius: 12px;
+    padding: 20px;
+}
+.red-preview-header{
+    padding-bottom: 10px;
+}
+/* 图片预览区域 */
+.red-image-preview {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 内容区域容器 */
+.red-content-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+/* 导航按钮 */
+.red-nav-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.red-nav-button:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 页码指示器 */
+.red-page-indicator {
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航容器 */
+.red-nav-container {
+    position: fixed;
+    bottom: 110px;  /* 调整位置避免与底部工具栏重叠 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 100;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);  /* 半透明背景 */
+    backdrop-filter: blur(8px);  /* 毛玻璃效果 */
+    border-radius: 20px;
+}
+
+.red-nav-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+.red-nav-button:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 内容区块样式 */
+.red-content-section {
+    display: none;
+    margin: 0 13px;
+}
+
+.red-content-section[data-index="0"] {
+    display: block;
+}
+
+.red-section-active {
+    display: block;
+}
+
+.red-preview-container section:not(.red-section-active) {
+    display: none;
+}
+
+.red-nav-hidden {
+    visibility: hidden;
+}
+
+.red-section-visible {
+    display: block !important; 
+}
+
+.red-section-hidden {
+    display: none !important; 
+}
+
+/* 空状态提示 */
+.red-empty-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-error);
+    font-size: 15px;
+    background: var(--background-primary-alt);
+    border: 1px dashed var(--background-modifier-border);
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 320px;
+    line-height: 1.8;
+    white-space: pre-line;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

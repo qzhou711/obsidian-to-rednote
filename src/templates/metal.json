@@ -1,0 +1,69 @@
+{
+    "id": "metal",
+    "name": "金属科技",
+    "styles": {
+        "imagePreview": "background-color: #1e2228; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 16px rgba(192,192,192,0.3); border: 1px solid #4d4d4d80;",
+                "placeholder": "background: #282c34; transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease; filter: contrast(1.1) saturate(1.2);"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 10px;",
+            "userName": "font-size: 16px; font-weight: 700; color: #f0f0f0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);",
+            "userId": "font-size: 14px; color: #a0a0a0; font-family: 'SF Pro Display';",
+            "postTime": "font-size: 13px; color: #808080; letter-spacing: 0.03em;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #a0a0a0; font-size: 13px; border-top: 1px solid #4d4d4d80; background: rgba(30,34,40,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #808080;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #f0f0f0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #f0f0f0;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #f0f0f0;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.1em; font-size: 15px; color: #e0e0e0;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #4d8ee7; text-shadow: 0 2px 4px rgba(77,142,231,0.2);",
+            "em": "font-style: normal; color: #a0a0a0; background: rgba(160,160,160,0.1); padding: 0 4px; border-left: 2px solid #4d4d4d80;",
+            "del": "text-decoration: line-through; color: #808080; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 26px; margin-bottom: 1.2em; color: #c0c0c0;",
+            "item": "margin-bottom: 0.7em; font-size: 15px; color: #c0c0c0; line-height: 1.75;",
+            "taskList": "list-style: none; margin-left: -22px; font-size: 15px; color: #c0c0c0; line-height: 1.75;"
+        },
+        "code": {
+            "block": "background: #282c34; padding: 1.2em; border-radius: 4px; font-size: 14px; font-family: 'JetBrains Mono', monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #e0e0e0; margin: 1.5em 0; border: 1px solid #4d4d4d80; box-shadow: inset 0 4px 12px rgba(0,0,0,0.2);",
+            "inline": "background: #282c34; padding: 4px 10px; border-radius: 2px; color: #e0e0e0; font-size: 14px; font-family: 'JetBrains Mono', monospace; border: 1px solid #4d4d4d80;"
+        },
+        "quote": "border-left: 3px solid #4d8ee7; padding: 0 0 0 20px; margin: 1.5em 0; color: #a0a0a0; font-style: normal; font-size: 15px; line-height: 1.75; background: linear-gradient(to right, rgba(77,142,231,0.1), transparent);",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); border: 1px solid #4d4d4d80;",
+        "link": "color: #4d8ee7; text-decoration: none; border-bottom: 1px solid #4d8ee780; transition: all 0.2s ease; text-shadow: 0 2px 4px rgba(77,142,231,0.1);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 4px; overflow: hidden; border: 1px solid #4d4d4d80; box-shadow: 0 4px 12px rgba(0,0,0,0.2);",
+            "header": "background: linear-gradient(135deg, #282c34, #1e2228); font-weight: 700; color: #4d8ee7; padding: 14px; border-bottom: 2px solid #4d4d4d80;",
+            "cell": "padding: 14px; color: #c0c0c0; border-top: 1px solid #4d4d4d80;"
+        },
+        "hr": "border: none; border-top: 2px solid #4d4d4d80; margin: 32px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.3);",
+        "footnote": {
+            "ref": "color: #a0a0a0; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #a0a0a0; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

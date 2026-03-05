@@ -1,0 +1,36 @@
+{
+  "name": "note-to-red",
+  "version": "1.0.6",
+  "description": "一键将 Obsidian 笔记转换为小红书图片格式",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "xiaohongshu"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/dom-to-image": "^2.6.7",
+    "@types/jszip": "^3.4.0",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.17.3",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "html-to-image": "^1.11.13",
+    "html2canvas": "^1.4.1",
+    "jszip": "^3.10.1"
+  }
+}

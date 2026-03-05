@@ -1,0 +1,69 @@
+{
+    "id": "ocean",
+    "name": "深海之境",
+    "styles": {
+        "imagePreview": "background-color: #0a192f; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(64,169,255,0.25); border: 1px solid #1d3552;",
+                "placeholder": "background: linear-gradient(135deg, #112a45, #1d3552); transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease; filter: brightness(1.1) contrast(1.05);"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 10px;",
+            "userName": "font-size: 16px; font-weight: 700; color: #40a9ff; text-shadow: 0 2px 8px rgba(64,169,255,0.2);",
+            "userId": "font-size: 14px; color: #69c0ff; font-family: 'SF Pro Text';",
+            "postTime": "font-size: 13px; color: #91d5ff; letter-spacing: 0.03em;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #69c0ff; font-size: 13px; border-top: 1px solid #1d3552; background: rgba(10,25,47,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #91d5ff;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #40a9ff; text-shadow: 0 2px 8px rgba(64,169,255,0.15);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #40a9ff;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #40a9ff;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.2em; font-size: 15px; color: #e6f7ff;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #40a9ff; text-shadow: 0 2px 8px rgba(64,169,255,0.2);",
+            "em": "font-style: normal; color: #69c0ff; background: rgba(105,192,255,0.1); padding: 0 4px; border-left: 2px solid #69c0ff80;",
+            "del": "text-decoration: line-through; color: #91d5ff; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 28px; margin-bottom: 1.2em; color: #bae7ff;",
+            "item": "margin-bottom: 0.8em; font-size: 15px; color: #bae7ff; line-height: 1.8;",
+            "taskList": "list-style: none; margin-left: -24px; font-size: 15px; color: #bae7ff; line-height: 1.8;"
+        },
+        "code": {
+            "block": "background: #112a45; padding: 1.2em; border-radius: 14px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #bae7ff; margin: 1.5em 0; box-shadow: inset 0 4px 12px rgba(0,0,0,0.15), 0 2px 8px rgba(64,169,255,0.1); border: 1px solid #1d3552;",
+            "inline": "background: #112a45; padding: 4px 10px; border-radius: 6px; color: #bae7ff; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #1d3552;"
+        },
+        "quote": "border-left: 3px solid #40a9ff; padding: 0 0 0 20px; margin: 1.5em 0; color: #69c0ff; font-style: normal; font-size: 15px; line-height: 1.8; background: linear-gradient(to right, rgba(64,169,255,0.05), transparent);",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 14px; box-shadow: 0 8px 24px rgba(64,169,255,0.25); border: 1px solid #69c0ff80;",
+        "link": "color: #40a9ff; text-decoration: none; border-bottom: 1px solid rgba(64,169,255,0.3); transition: all 0.2s ease; text-shadow: 0 2px 4px rgba(64,169,255,0.1);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; border: 1px solid #1d3552; box-shadow: 0 4px 12px rgba(64,169,255,0.15);",
+            "header": "background: linear-gradient(135deg, #112a45, #0a192f); font-weight: 700; color: #40a9ff; padding: 14px; border-bottom: 2px solid #1d3552;",
+            "cell": "padding: 14px; color: #bae7ff; border-top: 1px solid #1d3552;"
+        },
+        "hr": "border: none; border-top: 2px solid #1d3552; margin: 32px 0; box-shadow: 0 2px 8px rgba(64,169,255,0.15);",
+        "footnote": {
+            "ref": "color: #69c0ff; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #69c0ff; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}

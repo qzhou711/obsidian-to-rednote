@@ -1,0 +1,42 @@
+.theme-preview-modal {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.theme-preview-modal .red-theme-title{
+    text-align: center;
+}
+
+/* 小红书预览容器 */
+.theme-preview-modal .tp-red-preview-container {
+    position: relative;
+    min-width: 490px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--background-primary-alt);
+    border-radius: 12px;
+    padding: 20px;
+}
+.theme-preview-modal .red-preview-header{
+    padding-bottom: 10px;
+}
+/* 图片预览区域 */
+.theme-preview-modal .red-image-preview {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 内容区块样式 */
+.theme-preview-modal .red-preview-content {
+    margin: 0 13px;
+}

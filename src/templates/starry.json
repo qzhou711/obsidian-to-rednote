@@ -1,0 +1,69 @@
+{
+    "id": "starry",
+    "name": "星空梦境",
+    "styles": {
+        "imagePreview": "background-color: #0d0f1a; padding: 32px 28px;",
+        "header": {
+            "avatar": {
+                "container": "width: 40px; height: 40px; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 24px rgba(147,112,219,0.3); border: 1px solid #9370db80;",
+                "placeholder": "background: linear-gradient(135deg, #252640, #1a1b2e); transition: all 0.3s ease;",
+                "image": "object-fit: cover; transition: transform 0.3s ease; filter: brightness(1.1) contrast(1.05);"
+            },
+            "nameContainer": "display: flex; align-items: center; gap: 10px;",
+            "userName": "font-size: 16px; font-weight: 700; color: #9370db; text-shadow: 0 2px 8px rgba(147,112,219,0.2);",
+            "userId": "font-size: 14px; color: #b19cd9; font-family: 'SF Pro Text';",
+            "postTime": "font-size: 13px; color: #8a7bb5; letter-spacing: 0.03em;",
+            "verifiedIcon": "width: 20px; height: 20px; margin-left: -5px; fill: #1DA1F2;"
+        },
+        "footer": {
+            "container": "position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; color: #b19cd9; font-size: 13px; border-top: 1px solid #252640; background: rgba(13,15,26,0.95); backdrop-filter: blur(12px);",
+            "text": "color: inherit; transition: color 0.2s ease; white-space: nowrap;",
+            "separator": "color: #8a7bb5;"
+        },
+        "title": {
+            "h2": {
+                "base": "margin: 0; font-size: 1.5em; letter-spacing: -0.01em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #9370db; text-shadow: 0 2px 8px rgba(147,112,219,0.15);",
+                "after": ""
+            },
+            "h3": {
+                "base": "margin: 28px 0 0; font-size: 1.25em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #9370db;",
+                "after": ""
+            },
+            "base": {
+                "base": "margin: 24px 0 0; font-size: 1.1em; line-height: 1.5;",
+                "content": "font-weight: 700; color: #9370db;",
+                "after": ""
+            }
+        },
+        "paragraph": "line-height: 1.8; margin-bottom: 1.2em; font-size: 15px; color: #f0e6ff;",
+        "emphasis": {
+            "strong": "font-weight: 700; color: #9b59b6; text-shadow: 0 2px 8px rgba(155,89,182,0.2);",
+            "em": "font-style: normal; color: #b19cd9; background: rgba(177,156,217,0.1); padding: 0 4px; border-left: 2px solid #b19cd980;",
+            "del": "text-decoration: line-through; color: #8a7bb5; opacity: 0.8;"
+        },
+        "list": {
+            "container": "padding-left: 28px; margin-bottom: 1.2em; color: #d8cef6;",
+            "item": "margin-bottom: 0.8em; font-size: 15px; color: #d8cef6; line-height: 1.8;",
+            "taskList": "list-style: none; margin-left: -24px; font-size: 15px; color: #d8cef6; line-height: 1.8;"
+        },
+        "code": {
+            "block": "background: #252640; padding: 1.2em; border-radius: 14px; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; color: #d8cef6; margin: 1.5em 0; box-shadow: inset 0 4px 12px rgba(0,0,0,0.15), 0 2px 8px rgba(147,112,219,0.1); border: 1px solid #9370db80;",
+            "inline": "background: #252640; padding: 4px 10px; border-radius: 6px; color: #d8cef6; font-size: 14px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid #9370db80;"
+        },
+        "quote": "border-left: 3px solid #b19cd9; padding: 0 0 0 20px; margin: 1.5em 0; color: #b19cd9; font-style: normal; font-size: 15px; line-height: 1.8; background: linear-gradient(to right, rgba(177,156,217,0.05), transparent);",
+        "image": "max-width: 100%; height: auto; margin: 1.5em auto; border-radius: 14px; box-shadow: 0 8px 24px rgba(147,112,219,0.25); border: 1px solid #9370db80;",
+        "link": "color: #9370db; text-decoration: none; background-image: linear-gradient(to right, #9370db80, #b19cd980); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: all 0.3s ease; text-shadow: 0 2px 4px rgba(147,112,219,0.1);",
+        "table": {
+            "container": "width: 100%; margin: 1.5em 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; border: 1px solid #9370db80; box-shadow: 0 4px 12px rgba(147,112,219,0.15);",
+            "header": "background: linear-gradient(135deg, #252640, #0d0f1a); font-weight: 700; color: #9370db; padding: 14px; border-bottom: 2px solid #9370db80;",
+            "cell": "padding: 14px; color: #d8cef6; border-top: 1px solid #9370db80;"
+        },
+        "hr": "border: none; border-top: 2px solid #9370db80; margin: 32px 0; box-shadow: 0 2px 8px rgba(147,112,219,0.15);",
+        "footnote": {
+            "ref": "color: #b19cd9; text-decoration: none; font-size: 0.9em;",
+            "backref": "color: #b19cd9; text-decoration: none; font-size: 0.9em;"
+        }
+    }
+}
