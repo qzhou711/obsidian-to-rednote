@@ -602,23 +602,21 @@ export class RedView extends ItemView {
         const container = contentArea.querySelector('.red-content-container') as HTMLElement;
         if (!container) return;
 
-        // 第一步：删除上次拆分产生的续页，把内容归还给原始 section
-        const continuations = Array.from(container.querySelectorAll('.red-content-section[data-continuation]')) as HTMLElement[];
-        for (const cont of continuations) {
-            const originalIndex = cont.getAttribute('data-continuation');
-            const original = container.querySelector(`.red-content-section[data-original-index="${originalIndex}"]`) as HTMLElement;
-            if (original) {
-                // 把续页的子元素全部移回原始 section
+        // 第一步：按原始 section 分组，将所有续页内容按顺序归还
+        const originals = Array.from(container.querySelectorAll('.red-content-section:not([data-continuation])')) as HTMLElement[];
+        originals.forEach((s, i) => s.setAttribute('data-original-index', String(i)));
+
+        originals.forEach(original => {
+            const idx = original.getAttribute('data-original-index')!;
+            // 找到属于该原始 section 的所有续页，按 DOM 顺序排列
+            const conts = Array.from(container.querySelectorAll(`.red-content-section[data-continuation="${idx}"]`)) as HTMLElement[];
+            for (const cont of conts) {
                 while (cont.firstChild) {
                     original.appendChild(cont.firstChild);
                 }
+                cont.remove();
             }
-            cont.remove();
-        }
-
-        // 第二步：对每个原始 section 标记 data-original-index（首次运行时设置）
-        const originals = Array.from(container.querySelectorAll('.red-content-section:not([data-continuation])')) as HTMLElement[];
-        originals.forEach((s, i) => s.setAttribute('data-original-index', String(i)));
+        });
 
         // 第三步：逐个检测并拆分溢出的 section
         let insertAfter: HTMLElement | null = null;

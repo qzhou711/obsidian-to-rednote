@@ -103,12 +103,12 @@ downloads version license
 
 ## 安装方法
 
-### 从 Obsidian 社区插件安装（推荐）
+<!-- ### 从 Obsidian 社区插件安装（推荐）
 
 1. 打开 Obsidian 设置
 2. 进入「第三方插件」，关闭安全模式
 3. 点击「浏览社区插件」，搜索 `Note to RED`
-4. 点击安装并启用
+4. 点击安装并启用 -->
 
 ### 手动安装
 
@@ -116,17 +116,7 @@ downloads version license
 2. 解压后将文件夹复制到 `{vault}/.obsidian/plugins/`
 3. 重启 Obsidian，在设置中启用插件
 
-## 支持作者
 
-如果这个插件对你有所帮助，欢迎支持作者：
-
-**微信支付**  
-
-
-**支付宝**  
-
-
-**Buy Me a Coffee**  
 
 
 ## 许可证
