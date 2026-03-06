@@ -8,7 +8,7 @@ downloads version license
 ## 功能演示
 <p align="center">
   <img src="src/assets/introduce/image_1.png" alt="功能演示1" width="100%" style="margin:8px;">
-  <img src="src/assets/introduce/image_2.png" alt="功能演示2" width="100%" style="margin:8px;">
+  <!-- <img src="src/assets/introduce/image_2.png" alt="功能演示2" width="100%" style="margin:8px;"> -->
   <img src="src/assets/introduce/image_3.png" alt="功能演示3" width="100%" style="margin:8px;">
 </p>
 
