@@ -1,9 +1,9 @@
 {
-    "id": "note-to-red",
+    "id": "obsidian-to-rednote",
     "name": "Note to RED",
-    "version": "1.0.19",
+    "version": "1.0.20",
     "minAppVersion": "0.15.0",
     "description": "Convert Markdown notes to RED (Xiaohongshu) style images",
-    "author": "Yeban",
+    "author": "Ellen Zhou",
     "isDesktopOnly": true
 }
