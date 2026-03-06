@@ -6,7 +6,11 @@ downloads version license
 > 本项目源自 [note to red](https://github.com/Yeban8090/note-to-red/issues)    
 
 ## 功能演示
-
+<p align="center">
+  <img src="src/assets/introduce/image_1.png" alt="功能演示1" width="100%" style="margin:8px;">
+  <img src="src/assets/introduce/image_2.png" alt="功能演示2" width="100%" style="margin:8px;">
+  <img src="src/assets/introduce/image_3.png" alt="功能演示3" width="100%" style="margin:8px;">
+</p>
 
 
 ## 功能特点
@@ -103,12 +107,7 @@ downloads version license
 
 ## 安装方法
 
-<!-- ### 从 Obsidian 社区插件安装（推荐）
 
-1. 打开 Obsidian 设置
-2. 进入「第三方插件」，关闭安全模式
-3. 点击「浏览社区插件」，搜索 `Note to RED`
-4. 点击安装并启用 -->
 
 ### 手动安装
 
@@ -116,19 +115,16 @@ downloads version license
 2. 解压后将文件夹复制到 `{vault}/.obsidian/plugins/`
 3. 重启 Obsidian，在设置中启用插件
 
-
-
-
 ## Efficient VLA 方向实验室速览
 
-<details>
-<summary>点击展开 / 收起</summary>
+点击展开 / 收起
 
-<div style="height: 400px; overflow-y: auto; padding: 0 8px; border: 1px solid #30363d; border-radius: 6px; margin-top: 8px;">
+
 
 ### 🥇 Tier 1：定义方向的顶级实验室
 
 #### 1. MIT HAN Lab — Song Han
+
 - **代表人物**：**Song Han**（MIT EECS 副教授）、Jiaming Tang、Yao Lu、Zhijian Liu
 - **定位**：LLM/VLM 高效推理的绝对领军者，正在将量化/稀疏/系统优化全面迁移到 VLA
 - **代表工作**：
@@ -138,11 +134,12 @@ downloads version license
   - **AWQ** / **QServe** / **LServe**：底层量化/稀疏注意力基础设施
   - **QeRL** (ICLR 2026)：NVFP4 量化 + LoRA 训练框架
 - **为什么重要**：Han Lab 拥有从量化算法（AWQ）到系统部署（TinyChat）到 VLA 应用（VLASH）的**全栈能力**，是将 efficient LLM 技术迁移到 VLA 的最重要实验室
-- 🏠 https://hanlab.mit.edu
+- 🏠 [https://hanlab.mit.edu](https://hanlab.mit.edu)
 
 ---
 
 #### 2. Physical Intelligence (π) — Chelsea Finn & Sergey Levine
+
 - **代表人物**：**Chelsea Finn**（Stanford 教授 → π 联创）、**Sergey Levine**（UC Berkeley 教授 → π 联创）、**Karl Pertsch**、Kevin Black、Karol Hausman
 - **定位**：VLA 方向的**工业定义者**，π0/π0.5 是整个领域的性能天花板
 - **代表工作**：
@@ -151,11 +148,12 @@ downloads version license
   - **FAST/π0-FAST**：频域 action tokenization，大幅压缩动作表示
   - **OpenVLA** / **OpenVLA-OFT**：开源 VLA baseline（Finn 组 Stanford 时期）
 - **与 efficient 方向的关系**：FAST 是动作表示效率的标杆；π0 的 flow matching 绕过了 AR decode 瓶颈；但 π 本身更侧重**能力上限**而非边缘部署
-- 🏠 https://physicalintelligence.company
+- 🏠 [https://physicalintelligence.company](https://physicalintelligence.company)
 
 ---
 
 #### 3. HuggingFace LeRobot — Mustafa Shukor & Rémi Cadène
+
 - **代表人物**：**Mustafa Shukor**（SmolVLA 一作）、**Dana Aubakirova**、**Rémi Cadène**（LeRobot 负责人）
 - **定位**：VLA 民主化 + 边缘部署的**开源生态建设者**
 - **代表工作**：
@@ -163,17 +161,19 @@ downloads version license
   - **LeRobot**：开源机器人学习框架 + 社区数据集
   - **VLAb**：VLA 预训练实验室
 - **为什么重要**：SmolVLA 是目前**最适合边缘部署**的开源 VLA，完整的 HF 生态（模型、数据、训练框架）降低了准入门槛
-- 🏠 https://github.com/huggingface/lerobot
+- 🏠 [https://github.com/huggingface/lerobot](https://github.com/huggingface/lerobot)
 
 ---
 
 ### 🥈 Tier 2：聚焦特定 efficient 子方向
 
 #### 4. 北京大学 / 小鹏合作组
+
 - **代表工作**：**FastDriveVLA** (AAAI 2026)：重建式视觉 token 剪枝加速自动驾驶 VLA
 - **侧重**：自动驾驶场景的 VLA 高效推理
 
 #### 5. QuantVLA 团队（多机构合作）
+
 - **代表工作**：
   - **QuantVLA**：首个面向 VLA 的 PTQ 框架，Scale-Calibrated 量化 + OHB
   - **SQAP-VLA**：空间感知 + 量化感知 token 剪枝
@@ -182,6 +182,7 @@ downloads version license
 ---
 
 #### 6. TinyVLA / EfficientVLA 系列
+
 - **代表工作**：
   - **TinyVLA**：紧凑型多模态 Transformer + 轻量 diffusion head
   - **EfficientVLA**：剪枝冗余语言层 + 重用中间表征
@@ -190,6 +191,7 @@ downloads version license
 - **特点**：这些工作分散在不同组，但共同构成了 VLA 效率优化的技术全景
 
 #### 7. SimVLA / Frontier Robotics
+
 - **代表人物**：Yuankai Luo 等
 - **代表工作**：**SimVLA**：0.5B 参数 LIBERO SOTA，证明训练 recipe > 架构复杂度
 - **为什么重要**：为 efficient VLA 提供了**公平 baseline**——未来所有效率优化应在 SimVLA 上验证真实增益
@@ -197,6 +199,7 @@ downloads version license
 ---
 
 #### 8. NVIDIA Robotics — Yuke Zhu & Jim Fan
+
 - **代表人物**：**Yuke Zhu**（UT Austin 教授 + NVIDIA）、**Jim Fan**（NVIDIA 高级研究科学家）、Dieter Fox
 - **代表工作**：
   - **GR00T N1**：开源人形机器人基础模型（2B 参数）
@@ -204,6 +207,7 @@ downloads version license
 - **与 efficient 方向的关系**：NVIDIA 同时提供**硬件（Jetson）和软件（GR00T）**，是 VLA 边缘部署的最重要平台方
 
 #### 9. Purdue + NVIDIA 合作组
+
 - **代表人物**：Manoj Vishwanathan、**Anand Raghunathan**（Purdue 教授）、Suvinay Subramanian（NVIDIA）
 - **代表工作**：**Characterizing VLA Bottleneck**：识别动作生成 75% 延迟瓶颈
 - **为什么重要**：从**硬件 profiling 角度**为整个 efficient VLA 方向提供了量化证据
@@ -213,16 +217,17 @@ downloads version license
 ### 🥉 Tier 3：上游 efficient LLM/VLM 技术提供者
 
 #### 10. DuQuant 团队 — 清华 / 华为
+
 - **代表工作**：**DuQuant** (NeurIPS 2024 Oral)：旋转 + 置换实现 W4A4 SOTA
 - **关系**：DuQuant 是 LLM 量化方法，直接可迁移到 VLA backbone
 
 #### 11. UC Berkeley BAIR — Pieter Abbeel & Sergey Levine 组
+
 - **代表人物**：**Pieter Abbeel**、Sergey Levine（双栖 Berkeley + π）
 - **代表工作**：Octo、RT-X、大量 VLA 基础设施
 - **关系**：很多 efficient VLA 的 baseline 和评估框架源自此组
 
-</div>
-</details>
+
 
 ## 许可证
 
