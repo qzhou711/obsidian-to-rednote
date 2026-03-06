@@ -116,7 +116,7 @@
 
 ### 手动安装
 
-1. 前往 [Releases]() 下载最新版本
+1. 前往 [Releases](https://github.com/qzhou711/obsidian-to-rednote/releases/tag/v1.0.20) 下载最新版本
 2. 解压后将文件夹复制到 `{vault}/.obsidian/plugins/`
 3. 重启 Obsidian，在设置中启用插件
 
